@@ -15,8 +15,8 @@ AUTH_TYPE = AUTH_OAUTH
 OAUTH_PROVIDERS = [
     {'name':'google', 'icon':'fa-google', 'token_key':'access_token',
         'remote_app': {
-            'consumer_key':'410218985849-a1muah8jnua4d9116tcs000afb7uc542.apps.googleusercontent.com',
-            'consumer_secret':'fxq-0_HpG01LLiBT1MRgJErp',
+            'consumer_key':'{GOOGLE_AUTH_CLIENT_ID}',
+            'consumer_secret':'{GOOGLE_AUTH_SECRET_KEY}',
             'base_url':'https://www.googleapis.com/plus/v1/',
             'request_token_params':{
               'scope': 'https://www.googleapis.com/auth/userinfo.email'
