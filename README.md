@@ -3,17 +3,18 @@
 
 This repository contains demo using [Superset](https://github.com/airbnb/superset). After begging containers, you can try Superset right now.   
 
-This demo of Superset customizes authentication that by using OAuth to Access Google APIs. So you have to prepare a client-id, secret-key from Google developer console, and to enable Google+ Api.
+## List of changes configurations
 
-## Other customizes
-
+- Authentication uses OAuth by Google APIs.
+  - Prepare a client-id, secret-key from Google developer console, and to enable Google+ Api.
+  - Set `Redirect URI` to `http://localhost:8088/oauth-authorized/google` at Google Developers Console.
 - Database uses `mysql` that one of containers.
 
 ## How to start
 
 ### Step 1
 
-Set up a google auth codes, then starting containers.
+Using following shell script, set up a google auth codes then starting containers.
 
 ```
 ./setup.sh <GOOGLE_AUTH_CLIENT_ID> <GOOGLE_AUTH_SECRET_KEY>
@@ -21,7 +22,7 @@ Set up a google auth codes, then starting containers.
 
 ### Step2
 
-After starting containers, create user of Superset who you want to login.
+After starting containers,  create a user of Superset who you want to login by using following docker command.
 
 ```
 docker exec -it superset \
