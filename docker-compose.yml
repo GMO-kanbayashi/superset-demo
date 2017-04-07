@@ -8,6 +8,7 @@ services:
       - 3306:3306
     volumes:
       - ./mysql/init:/docker-entrypoint-initdb.d
+      - ./mysql/etc/mysql/conf.d/custom.cnf:/etc/mysql/conf.d/custom.cnf
     environment:
       MYSQL_ROOT_PASSWORD: ""
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"

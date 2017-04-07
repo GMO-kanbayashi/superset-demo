@@ -3,7 +3,7 @@ MAINTAINER nsoushi
 
 ENV SUPERSET_VERSION 0.17.3
 ENV SUPERSET_HOME /superset
-ENV SUPERSET_DB_URI "mysql://root@mysql:3306/app"
+ENV SUPERSET_DB_URI "mysql://root@mysql:3306/app?charset=utf8mb4"
 
 ENV PYTHONPATH $SUPERSET_HOME:$PYTHONPATH
 
