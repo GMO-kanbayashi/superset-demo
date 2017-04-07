@@ -27,7 +27,7 @@ After starting containers,  create a user of Superset who you want to login by u
 ```
 docker exec -it superset \
   fabmanager create-admin --app superset \
-  --username '<UserName of Google Account>' \
+  --username '<DisplayName of Google+ Account>' \
   --firstname '<any first name>' \
   --lastname '<any last name>' \
   --email '<Mail Address of Google Account>' \
